@@ -21,7 +21,7 @@ def handle_message(data):
 
     sleep(3)
 
-    emit("mess", syntax_analyze("random text"))
+    emit("message", syntax_analyze(data))
 
 
 
