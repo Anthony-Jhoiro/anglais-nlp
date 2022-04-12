@@ -3,3 +3,4 @@ flask_socketio
 flask-cors
 gevent-websocket
 eventlet
+nltk
