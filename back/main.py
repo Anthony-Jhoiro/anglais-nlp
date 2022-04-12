@@ -2,6 +2,7 @@ from time import sleep
 from flask import Flask, render_template
 from flask_socketio import SocketIO, emit
 from flask_cors import CORS
+from nlpscripts.syntax_analyze import syntax_analyze
 
 
 
@@ -20,7 +21,7 @@ def handle_message(data):
 
     sleep(3)
 
-    emit("mess", "1234")
+    emit("mess", syntax_analyze("random text"))
 
 
 
